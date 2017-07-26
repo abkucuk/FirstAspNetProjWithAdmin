@@ -1,0 +1,13 @@
+C:\Users\ahmet\Desktop\EmlakJet\Dal\EmlakClass\bin\Debug\EmlakClass.dll.config
+C:\Users\ahmet\Desktop\EmlakJet\Dal\EmlakClass\bin\Debug\EmlakClass.dll
+C:\Users\ahmet\Desktop\EmlakJet\Dal\EmlakClass\bin\Debug\EmlakClass.pdb
+C:\Users\ahmet\Desktop\EmlakJet\Dal\EmlakClass\obj\Debug\EmlakClass.dll
+C:\Users\ahmet\Desktop\EmlakJet\Dal\EmlakClass\obj\Debug\EmlakClass.pdb
+D:\2014WebUygulamaları\EmlakJet\Dal\EmlakClass\bin\Debug\EmlakClass.dll.config
+D:\2014WebUygulamaları\EmlakJet\Dal\EmlakClass\bin\Debug\EmlakClass.dll
+D:\2014WebUygulamaları\EmlakJet\Dal\EmlakClass\bin\Debug\EmlakClass.pdb
+D:\2014WebUygulamaları\EmlakJet\Dal\EmlakClass\bin\Debug\EntityFramework.dll
+D:\2014WebUygulamaları\EmlakJet\Dal\EmlakClass\bin\Debug\EntityFramework.xml
+D:\2014WebUygulamaları\EmlakJet\Dal\EmlakClass\obj\Debug\EmlakClass.csprojResolveAssemblyReference.cache
+D:\2014WebUygulamaları\EmlakJet\Dal\EmlakClass\obj\Debug\EmlakClass.dll
+D:\2014WebUygulamaları\EmlakJet\Dal\EmlakClass\obj\Debug\EmlakClass.pdb

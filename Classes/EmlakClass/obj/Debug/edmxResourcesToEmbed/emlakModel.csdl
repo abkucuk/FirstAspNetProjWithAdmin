@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="emlakModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="emlakEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="il" EntityType="emlakModel.il" />
+    <EntitySet Name="ilce" EntityType="emlakModel.ilce" />
+    <EntitySet Name="kategori" EntityType="emlakModel.kategori" />
+    <EntitySet Name="tipler" EntityType="emlakModel.tipler" />
+    <EntitySet Name="turler" EntityType="emlakModel.turler" />
+  </EntityContainer>
+  <EntityType Name="il">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Il1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Tarih" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="ilce">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IlId" Type="Int32" />
+    <Property Name="Ilce1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="kategori">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="KategoriAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Aciklama" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="tarih" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="tipler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipAdi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TipAciklama" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="tarih" Type="DateTime" />
+  </EntityType>
+  <EntityType Name="turler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TurAdi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TurAciklama" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="tarih" Type="DateTime" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="emlakModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityType Name="il">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Il" Type="varchar" MaxLength="255" />
+          <Property Name="Tarih" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="ilce">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IlId" Type="int" />
+          <Property Name="Ilce" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="kategori">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KategoriAdi" Type="varchar" MaxLength="50" />
+          <Property Name="Aciklama" Type="varchar" MaxLength="255" />
+          <Property Name="tarih" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="tipler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TipAdi" Type="varchar" MaxLength="100" />
+          <Property Name="TipAciklama" Type="varchar" MaxLength="255" />
+          <Property Name="tarih" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityType Name="turler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TurAdi" Type="varchar" MaxLength="100" />
+          <Property Name="TurAciklama" Type="varchar" MaxLength="255" />
+          <Property Name="tarih" Type="datetime" Precision="0" />
+        </EntityType>
+        <EntityContainer Name="emlakModelStoreContainer">
+          <EntitySet Name="il" EntityType="Self.il" Schema="emlak" store:Type="Tables" />
+          <EntitySet Name="ilce" EntityType="Self.ilce" Schema="emlak" store:Type="Tables" />
+          <EntitySet Name="kategori" EntityType="Self.kategori" Schema="emlak" store:Type="Tables" />
+          <EntitySet Name="tipler" EntityType="Self.tipler" Schema="emlak" store:Type="Tables" />
+          <EntitySet Name="turler" EntityType="Self.turler" Schema="emlak" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="emlakModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityType Name="il">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Il1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="Tarih" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="ilce">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IlId" Type="Int32" />
+          <Property Name="Ilce1" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="kategori">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KategoriAdi" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Aciklama" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="tarih" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="tipler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TipAdi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TipAciklama" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="tarih" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="turler">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TurAdi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="TurAciklama" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="tarih" Type="DateTime" />
+        </EntityType>
+        <EntityContainer Name="emlakEntities">
+          <EntitySet Name="il" EntityType="Self.il" />
+          <EntitySet Name="ilce" EntityType="Self.ilce" />
+          <EntitySet Name="kategori" EntityType="Self.kategori" />
+          <EntitySet Name="tipler" EntityType="Self.tipler" />
+          <EntitySet Name="turler" EntityType="Self.turler" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="emlakModelStoreContainer" CdmEntityContainer="emlakEntities">
+          <EntitySetMapping Name="il">
+            <EntityTypeMapping TypeName="emlakModel.il">
+              <MappingFragment StoreEntitySet="il">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Il1" ColumnName="Il" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ilce">
+            <EntityTypeMapping TypeName="emlakModel.ilce">
+              <MappingFragment StoreEntitySet="ilce">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="IlId" ColumnName="IlId" />
+                <ScalarProperty Name="Ilce1" ColumnName="Ilce" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="kategori">
+            <EntityTypeMapping TypeName="emlakModel.kategori">
+              <MappingFragment StoreEntitySet="kategori">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="KategoriAdi" ColumnName="KategoriAdi" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tipler">
+            <EntityTypeMapping TypeName="emlakModel.tipler">
+              <MappingFragment StoreEntitySet="tipler">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TipAdi" ColumnName="TipAdi" />
+                <ScalarProperty Name="TipAciklama" ColumnName="TipAciklama" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="turler">
+            <EntityTypeMapping TypeName="emlakModel.turler">
+              <MappingFragment StoreEntitySet="turler">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="TurAdi" ColumnName="TurAdi" />
+                <ScalarProperty Name="TurAciklama" ColumnName="TurAciklama" />
+                <ScalarProperty Name="tarih" ColumnName="tarih" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="false" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

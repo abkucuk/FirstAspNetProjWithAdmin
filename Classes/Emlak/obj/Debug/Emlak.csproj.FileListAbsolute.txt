@@ -1,0 +1,18 @@
+C:\Users\lenovo pc\Documents\Visual Studio 2010\2015\Emlakjet\Dal\Emlak\bin\Debug\Emlak.dll.config
+C:\Users\lenovo pc\Documents\Visual Studio 2010\2015\Emlakjet\Dal\Emlak\bin\Debug\Emlak.dll
+C:\Users\lenovo pc\Documents\Visual Studio 2010\2015\Emlakjet\Dal\Emlak\bin\Debug\Emlak.pdb
+C:\Users\lenovo pc\Documents\Visual Studio 2010\2015\Emlakjet\Dal\Emlak\obj\Debug\Emlak.dll
+C:\Users\lenovo pc\Documents\Visual Studio 2010\2015\Emlakjet\Dal\Emlak\obj\Debug\Emlak.pdb
+C:\Users\lenovo pc\Documents\Visual Studio 2010\2015\Emlakjet\Dal\Emlak\obj\Debug\Emlak.csprojResolveAssemblyReference.cache
+D:\2014WebUygulamalari\Emlakjet\Dal\Emlak\bin\Debug\Emlak.dll.config
+D:\2014WebUygulamalari\Emlakjet\Dal\Emlak\bin\Debug\Emlak.dll
+D:\2014WebUygulamalari\Emlakjet\Dal\Emlak\bin\Debug\Emlak.pdb
+D:\2014WebUygulamalari\Emlakjet\Dal\Emlak\obj\Debug\ResolveAssemblyReference.cache
+D:\2014WebUygulamalari\Emlakjet\Dal\Emlak\obj\Debug\Emlak.dll
+D:\2014WebUygulamalari\Emlakjet\Dal\Emlak\obj\Debug\Emlak.pdb
+D:\2014WebUygulamaları\EmlakJet\Dal\Emlak\bin\Debug\Emlak.dll.config
+D:\2014WebUygulamaları\EmlakJet\Dal\Emlak\bin\Debug\Emlak.dll
+D:\2014WebUygulamaları\EmlakJet\Dal\Emlak\bin\Debug\Emlak.pdb
+D:\2014WebUygulamaları\EmlakJet\Dal\Emlak\obj\Debug\Emlak.csprojResolveAssemblyReference.cache
+D:\2014WebUygulamaları\EmlakJet\Dal\Emlak\obj\Debug\Emlak.dll
+D:\2014WebUygulamaları\EmlakJet\Dal\Emlak\obj\Debug\Emlak.pdb

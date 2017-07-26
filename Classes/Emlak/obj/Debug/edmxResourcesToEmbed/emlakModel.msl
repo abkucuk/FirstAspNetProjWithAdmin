@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="emlakModelStoreContainer" CdmEntityContainer="emlakEntities">
+    <EntitySetMapping Name="il">
+      <EntityTypeMapping TypeName="emlakModel.il">
+        <MappingFragment StoreEntitySet="il">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Il1" ColumnName="Il" />
+          <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ilce">
+      <EntityTypeMapping TypeName="emlakModel.ilce">
+        <MappingFragment StoreEntitySet="ilce">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IlId" ColumnName="IlId" />
+          <ScalarProperty Name="Ilce1" ColumnName="Ilce" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kategori">
+      <EntityTypeMapping TypeName="emlakModel.kategori">
+        <MappingFragment StoreEntitySet="kategori">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="KategoriAdi" ColumnName="KategoriAdi" />
+          <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tipler">
+      <EntityTypeMapping TypeName="emlakModel.tipler">
+        <MappingFragment StoreEntitySet="tipler">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TipAdi" ColumnName="TipAdi" />
+          <ScalarProperty Name="TipAciklama" ColumnName="TipAciklama" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="turler">
+      <EntityTypeMapping TypeName="emlakModel.turler">
+        <MappingFragment StoreEntitySet="turler">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="TurAdi" ColumnName="TurAdi" />
+          <ScalarProperty Name="TurAciklama" ColumnName="TurAciklama" />
+          <ScalarProperty Name="tarih" ColumnName="tarih" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
